@@ -1,9 +1,12 @@
+%{!?__build_pkg_version: %define __build_pkg_version 0.0.1}
+%{!?__build_pkg_release: %define __build_pkg_release 1}
+
 %define version 0.0.1
 
 Summary:    Boost Trie data structure 
 Name:       boost-trie-devel
-Version:    0.0.1
-Release:    1%{?dist}
+Version:    %{__build_pkg_version}
+Release:    %{__build_pkg_release}%{?dist}
 License:    Boost Software License
 Group:      Development/Libraries
 URL:        https://github.com/ithlony/Boost.Trie
